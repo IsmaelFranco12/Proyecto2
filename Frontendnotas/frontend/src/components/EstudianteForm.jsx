@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { createEstudiante } from '../services/api'; // Ruta corregida
+import { createEstudiante } from '../services/api';
 
 const EstudianteForm = ({ onSuccess }) => {
     const [nombre, setNombre] = useState('');
@@ -20,8 +20,8 @@ const EstudianteForm = ({ onSuccess }) => {
         };
 
         try {
-            await createEstudiante(nuevoEstudiante); // Solo esta llamada es necesaria
-            onSuccess(); // Recargar la lista de estudiantes
+            await createEstudiante(nuevoEstudiante);
+            onSuccess();
         } catch (error) {
             console.error("Error al guardar el estudiante:", error);
         }

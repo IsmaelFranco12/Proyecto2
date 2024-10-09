@@ -29,5 +29,5 @@ public class ManejadorGlobalExcepciones {
         return error;
     }
 
-    // Otros manejadores de excepciones si es necesario
+
 }

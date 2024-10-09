@@ -99,7 +99,7 @@ public class Estudiante {
     @PrePersist
     @PreUpdate
     public void calcularPuntajeTotal() {
-        // Asegurarse de que los valores no sean nulos antes de sumarlos
+
         if (actividades != null && primerParcial != null && segundoParcial != null && examenFinal != null) {
             this.puntajeTotal = actividades + primerParcial + segundoParcial + examenFinal;
         } else {

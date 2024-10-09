@@ -1,4 +1,4 @@
-/* Estilo general del contenedor */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -13,7 +13,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Estilo del contenedor de la tabla */
+
 .table-container {
     background: #fff;
     border-radius: 8px;
@@ -22,7 +22,7 @@ h1 {
     overflow-x: auto;
 }
 
-/* Estilo de la tabla con CSS Grid */
+
 .grid-table {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -52,7 +52,7 @@ h1 {
     background-color: #dcdde1;
 }
 
-/* Botón de eliminar */
+
 .delete-button {
     background-color: #e74c3c;
     color: white;
@@ -67,7 +67,7 @@ h1 {
     background-color: #c0392b;
 }
 
-/* Estilo responsivo */
+
 @media (max-width: 768px) {
     .grid-table {
         grid-template-columns: repeat(2, 1fr);

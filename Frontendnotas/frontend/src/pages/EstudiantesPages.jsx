@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { getEstudiantes, deleteEstudiante } from "../services/api"; // Ruta corregida
-import EstudianteForm from "../components/EstudianteForm"; // Importar el formulario
-import "./EstudiantesPage.css"; // Archivo de estilos
+import { getEstudiantes, deleteEstudiante } from "../services/api";
+import EstudianteForm from "../components/EstudianteForm";
+import "./EstudiantesPage.css";
 
 const EstudiantesPage = () => {
     const [estudiantes, setEstudiantes] = useState([]);
 
-    // Función para obtener los estudiantes
+
     const cargarEstudiantes = () => {
         getEstudiantes()
             .then((response) => {
@@ -17,12 +17,12 @@ const EstudiantesPage = () => {
             });
     };
 
-    // useEffect para cargar los estudiantes cuando el componente se monta
+
     useEffect(() => {
         cargarEstudiantes();
     }, []);
 
-    // Función para eliminar un estudiante
+
     const handleDelete = (id) => {
         deleteEstudiante(id)
             .then(() => {

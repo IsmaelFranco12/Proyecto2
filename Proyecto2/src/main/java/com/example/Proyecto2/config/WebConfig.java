@@ -9,10 +9,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/api/**") // Ajusta esto según tus necesidades
-                .allowedOrigins("http://localhost:5173") // Cambia esto a la URL de tu frontend
+        registry.addMapping("/api/**")
+                .allowedOrigins("http://localhost:5173")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                .allowedHeaders("*") // Permitir todos los encabezados
-                .allowCredentials(true); // Si necesitas enviar cookies o credenciales
+                .allowedHeaders("*")
+                .allowCredentials(true);
     }
 }
